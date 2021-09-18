@@ -1,3 +1,5 @@
+
+/*##CAMBIO DE ESTILOS DE COUNTDOWN (dando mas prioridad  a las justicacion  de las letraa)*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 *{
   /*par que el margin siempre sea lo que estamos pidiendo*/
@@ -11,34 +13,49 @@ body{
   /*centra la imagen*/
   background-position: center center;
 
-  /*la imagen es renderizada conservando la imagen propia*/
+  /*la imagen es renderizada conservando la imagen propia LA IMAGENES RENDERIZADA CONSERVANDO LAS PROPIEDADES DE LA IMAGEN PROPIA*/
   background-size: cover;
-  /*la disposicion  de los espacios se eliminaria*/
+
+  /* LA DISPOSICION DE LOS ESPACIOS SE ALINEARAN*/
   display: flex;
-  /**/
+  /*ORDENA DE UNA FORMA DE COLUMNA HACIA LA IZQUIERDA ORDENA*/
   flex-direction: column;
+  /* JALA EL FONTS DE IMPORT URL  */
   font-family: 'Poppins', sans-serif;
+  /*ALINEAR EL ITEMS DE UNA FORMA CENTRAL*/
   align-items: center;
   justify-content: center;
+  /*PARA DEFINIR LA ALTURA MINIMA DE UN ELEMETO*/
   min-height: 100vh;
+  /* PARA QUE EN TODO EL MARGENES DENTRO DE BODY EL MARGEN SIEMPRE VALGA CERO */
   margin: 0;
 }
 h1{
-  /*modifica el tipo de texto recibido de google font*/
+  /* MODIFICANDO EL TIPO DE TEXTO RECIBIDO DE GOOGLE FONTS*/
   font-weight: normal;
+
+  /* MODIFICANDO EL TAMAÑO  DE H1 */
   font-size: 4rem;
+
+  /* ESPECIFICA LA SECCIÓN DEL MARGEN DE ARRIBA TENDRÁ UN VALOR DE CERO */
   margin-top: -10rem;
 }
 .countDown-container{
   display: flex;
 }
+/* DONDE EL TIPO DE TEXTO GRUESO SE MODIFICARÁ PARA QUE SEA GRUESO */
 .big-text{
   font-weight: bold;
   font-size: 6rem;
+
+  /* PARA ESTABLECER LA DISTANCIA MINIMA ENTRE LINEAS */
   line-height: 1;
+
+  /* ESTABLECE LOS MARGENES DE VERTICAL Y HORIZONTAL*/
   margin: 0 2rem;
 }
 .countDown-el {
+  
   text-align: center ;
 }
 .counDown-el span {

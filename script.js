@@ -1,4 +1,13 @@
+
+
+const secondsEl =document.getElementById('seconds'); 
+const minsEl =document.getElementById('mins') ;
+const hoursEl =document.getElementById('hours') ;
+const daysEl =document.getElementById('days') ;
+
 const newYears = "01 jan 2022";
+
+
 function countDown () {
   /*convirtiendo newyears a fecha reconocible para el programa en milisegundos*/ 
   const newyearsDate = new Date(newYears)
@@ -7,15 +16,30 @@ function countDown () {
   const totalSeconds = (newyearsDate - currentDate)/1000
   
   const seconds = Math.floor((totalSeconds))% 60 ;
-  const minuts = Math.floor((totalSeconds )/60) % 60;
+  const mins = Math.floor((totalSeconds)/60) % 60;
 
   const hours =Math.floor((totalSeconds)/3600) % 24;
 
   const days = Math.floor((totalSeconds / 3600)/24);
 
-  console.log(days , hours ,minuts , seconds ,totalSeconds)
+  secondsEl.innerHTML =formatTime(seconds);
+  minsEl.innerHTML = formatTime(mins);
+  hoursEl.innerHTML = formatTime(hours);
+  daysEl.innerHTML = formatTime(days);
+
+
+
+
+
+  
 }
+function formatTime(time){
+  return time < 10 ? `0${time}` : time ;
+}
+
+//initial call
 countDown();
-setInterval(countDown,1000,aa)
-const prueba = 9181079.238 % 60;
-console.log(prueba)
+setInterval(countDown,1000)
+// setInterval(countDown,1000,aa)
+// const prueba = 9181079.238 % 60;
+// console.log(prueba)
