@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+  /*par que el margin siempre sea lo que estamos pidiendo*/
+  box-sizing: border-box;
+}
+
+body{
+  /*para copiar la url de la imagen  y que jale con background image url*/
+  background-image: url(https://images.unsplash.com/photo-1477601263568-180e2c6d046e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  
+  /*centra la imagen*/
+  background-position: center center;
+
+  /*la imagen es renderizada conservando la imagen propia*/
+  background-size: cover;
+  /*la disposicion  de los espacios se eliminaria*/
+  display: flex;
+  /**/
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+h1{
+  /*modifica el tipo de texto recibido de google font*/
+  font-weight: normal;
+  font-size: 4rem;
+  margin-top: -10rem;
+}
+.countDown-container{
+  display: flex;
+}
+.big-text{
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+.countDown-el {
+  text-align: center ;
+}
+.counDown-el span {
+  font-size: 1.5rem;
+
+}
