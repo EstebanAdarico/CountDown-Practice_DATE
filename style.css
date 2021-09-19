@@ -42,6 +42,8 @@ h1{
 }
 .countDown-container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* DONDE EL TIPO DE TEXTO GRUESO SE MODIFICARÁ PARA QUE SEA GRUESO */
 .big-text{
