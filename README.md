@@ -1,2 +1,4 @@
 # CountDown-Practice_DATE
-Practica  de los metodos de DATE para hacer un conteo regresivo hasta el fin de año
+- Conteo regresivo para que termine el año 2022
+- Practicar los metodos de DATE 
+- para hacer un conteo regresivo 
